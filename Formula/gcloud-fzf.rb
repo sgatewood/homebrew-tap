@@ -5,20 +5,20 @@
 class GcloudFzf < Formula
   desc ""
   homepage ""
-  version "1.0.3"
+  version "1.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sgatewood/gcloud-fzf/releases/download/v1.0.3/gcloud-fzf_Darwin_x86_64.tar.gz"
-      sha256 "123a16deec73b482cd9ddf72cb2afd470fae6f53cb86ef223f1bdb532e89fe68"
+      url "https://github.com/sgatewood/gcloud-fzf/releases/download/v1.0.5/gcloud-fzf_Darwin_x86_64.tar.gz"
+      sha256 "91f2bf92618033ebb6608c2dd2660da83d02ec0b68b68c6663f7a837137c667e"
 
       def install
         bin.install "gcloud-fzf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sgatewood/gcloud-fzf/releases/download/v1.0.3/gcloud-fzf_Darwin_arm64.tar.gz"
-      sha256 "4ee5572a0468b451264f5753dadfce926aef60d7d86061b0c9023eb248d96e47"
+      url "https://github.com/sgatewood/gcloud-fzf/releases/download/v1.0.5/gcloud-fzf_Darwin_arm64.tar.gz"
+      sha256 "0bf92e62d38a01dee0610a771c051c75e225a3e54356dbac295fc16aff032dfb"
 
       def install
         bin.install "gcloud-fzf"
@@ -29,8 +29,8 @@ class GcloudFzf < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sgatewood/gcloud-fzf/releases/download/v1.0.3/gcloud-fzf_Linux_x86_64.tar.gz"
-        sha256 "49500ec58cb9caabcf2cf000b9524d54fad8c57f51bafb808413943f10ec2c21"
+        url "https://github.com/sgatewood/gcloud-fzf/releases/download/v1.0.5/gcloud-fzf_Linux_x86_64.tar.gz"
+        sha256 "dd4dc12b429c4c5be6b8721dd970b5368aeaf5924705a6815fb0b0ff8e13c34d"
 
         def install
           bin.install "gcloud-fzf"
@@ -39,8 +39,8 @@ class GcloudFzf < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sgatewood/gcloud-fzf/releases/download/v1.0.3/gcloud-fzf_Linux_arm64.tar.gz"
-        sha256 "e6a1be8735095350335fcad13d5afee8841bf7f40f54c15f4e4a76f9d17313a0"
+        url "https://github.com/sgatewood/gcloud-fzf/releases/download/v1.0.5/gcloud-fzf_Linux_arm64.tar.gz"
+        sha256 "a7a6626fe4a22a821649fbd8661eec53d8771bcf423fe7fd66438f53326f4bfa"
 
         def install
           bin.install "gcloud-fzf"
