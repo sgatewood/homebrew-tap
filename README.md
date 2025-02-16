@@ -1,3 +1,5 @@
-# Homebrew Tap (wip)
+# Homebrew Tap
 
-playing with this for a second
+```shell
+brew install sgatewood/tap/gcloud-fzf
+```
